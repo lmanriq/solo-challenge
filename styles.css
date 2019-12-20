@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* HEADER AND NAV */
+header {
+  background-color: teal;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 60px;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+nav p {
+  margin: 0;
+  font-size: 20px;
+}
+
+nav p,
+main p {
+  font-family: cursive;
+  text-align: center;
+}
+
+main p {
+  margin: 30px;
+  font-size: 50px;
+}
+
+.bottom-border,
+nav p:hover,
+h1 {
+  text-shadow: 5px 5px gray;
+}
+
+.bottom-border {
+  border-bottom: 5px solid black;
+  padding-bottom: 15px;
+}
+
+/* ADDED PAGE SECTIONS  */
+#all-courses-section {
+  color: purple;
+}
+
+#collections-section {
+  color: green;
+}
+
+#wish-list-section {
+  color: gold;
+}
+
+#archived-section {
+  color: hotpink;
+}
+
+
+/* ANIMATION */
+.fade {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
